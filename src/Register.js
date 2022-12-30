@@ -44,7 +44,6 @@ const Register = () => {
       alert("please enter referralid");
     } else {
       const headers = {
-       // 'Authorization': 'JWT fefege...'
         "Content-Type": "application/json",
           Accept: "application/json",
           "Access-Control-Allow-Origin": "*",
@@ -67,62 +66,12 @@ const Register = () => {
           body: body
         })
 
-        //.then((res) => res.json())
         .then((data) => {
-          // if (data.message.referral_id === "Sorry, Invalid Referral ID.") {
-          //   alert("Sorry, Invalid Referral ID.");
-          // }
-          // else {
-          //   alert ('successfully Registered')
-          // }
           console.log("userRegister", data);
         });
       }
-
-        // .then((res) => {
-        //   dispatch({
-        //     type: FOUND_USER,
-        //     data: response.data[0]
-        //   })
-        // })
-        // .catch((error) => {
-        //   dispatch({
-        //     type: ERROR_FINDING_USER
-        //   })
-        // })
-
-      // fetch("https://lobster-app-ddwng.ondigitalocean.app/user/register", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //     Accept: "application/json",
-      //     "Access-Control-Allow-Origin": "*",
-      //     api_key: api_key,
-      //   },
-      //   body: JSON.stringify({
-      //     full_name: values.fullname,
-      //     username: values.username,
-      //     country_row_id: values.country,
-      //     mobile_number: values.mobile,
-      //     email_id: values.email,
-      //     password: values.password,
-      //     referral_id: values.referralid,
-      //   }),
-      // })
-
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         if (data.message.referral_id === "Sorry, Invalid Referral ID.") {
-  //           alert("Sorry, Invalid Referral ID.");
-  //         }
-  //         else {
-  //           alert ('successfully Registered')
-  //         }
-  //         console.log("userRegister", data);
-  //       });
-  //   }
-  // };
     }
+
   return (
     <div className="main-container">
       <div className="container1">
