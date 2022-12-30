@@ -8,15 +8,6 @@ h2, p{
     color: white;
 }
 
-.form-wrapper-login {
-    background: #191963;
-    width: 400px;
-    height: 400px;
-    border-radius: 8px;
-    margin-left: 35%;
-    margin-bottom: 8%;
-}
-
 .login-form-input {
         width: 20rem;
         height: 2.5rem;
